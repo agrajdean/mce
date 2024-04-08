@@ -1,426 +1,382 @@
+{{define "index.html"}}
 <!DOCTYPE html>
 <html lang="ro">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="robots.txt" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> -->
+    <link rel="stylesheet" href="/static/scripts/css/style.css" />
+
     <title>
-      Transportul Containerizat Rutier! Автомобильные Контейнерные
-      Грузоперевозки!Road Container Cargo Transportation!
+        Transportul Containerizat Rutier! Автомобильные Контейнерные
+        Грузоперевозки!Road Container Cargo Transportation!
     </title>
-    <meta
-      name="description"
-      content="Livrare container de marfa din portul Constanța (România) către Republica Moldova. Контейнерные доставки грузов из порта Констанца (Румыния) в Республику Молдова. Carry out container delivery of goods from the port of Constanta (Romania) to the Republic of Moldova.   "
-    />
-  </head>
-  <body>
+    <meta name="description"
+        content="Livrare container de marfa din portul Constanța (România) către Republica Moldova. Контейнерные доставки грузов из порта Констанца (Румыния) в Республику Молдова. Carry out container delivery of goods from the port of Constanta (Romania) to the Republic of Moldova.   " />
+</head>
+
+<body>
     <nav class="navbar">
-      <div class="container navbar-container">
-        <a href="#top">
-          <svg width="85" height="60" class="logo">
-            <use href="img/svg/sprite.svg#Logo"></use>
-          </svg>
-        </a>
-        <ul class="nav-menu">
-          <li class="nav-menu-item">
-            <a href="#servicii" class="nav-menu-link lang" key="services"
-              >servicii</a
-            >
-          </li>
-          <li class="nav-menu-item">
-            <a href="#info" class="nav-menu-link lang" key="useful_information"
-              >informații utile</a
-            >
-          </li>
-          <li class="nav-menu-item">
-            <a href="#contacte" class="nav-menu-link lang" key="contacts"
-              >contacte</a
-            >
-          </li>
-        </ul>
-        <div class="navbar-phone">
-          <svg width="34" height="34" class="logo">
-            <use href="img/svg/sprite.svg#phone icon"></use>
-          </svg>
-          <div class="navbar-phone-text">+373 696-03-007</div>
+        <div class="container navbar-container">
+            <a href="#top">
+                <svg width="85" height="60" class="logo">
+                    <use href="/static/images/svg/sprite.svg#Logo"></use>
+                </svg>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-menu-item">
+                    <a href="#servicii" class="nav-menu-link lang" key="services">servicii</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#info" class="nav-menu-link lang" key="useful_information">informații utile</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#contacte" class="nav-menu-link lang" key="contacts">contacte</a>
+                </li>
+            </ul>
+            <div class="navbar-phone">
+                <svg width="34" height="34" class="logo">
+                    <use href="/static/images/svg/sprite.svg#phone icon"></use>
+                </svg>
+                <div class="navbar-phone-text">+373 696-03-007</div>
+            </div>
+            <a href="#" class="cabinet" data-toggle="modal">
+                <svg width="27" height="32" viewBox="0 0 27 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M5.60714 8.5C5.60714 3.97811 9.10641 0.25 13.5 0.25C17.8936 0.25 21.3929 3.97811 21.3929 8.5C21.3929 13.0219 17.8936 16.75 13.5 16.75C9.10641 16.75 5.60714 13.0219 5.60714 8.5ZM13.5 1.75C10.003 1.75 7.10714 4.73673 7.10714 8.5C7.10714 12.2633 10.003 15.25 13.5 15.25C16.997 15.25 19.8929 12.2633 19.8929 8.5C19.8929 4.73673 16.997 1.75 13.5 1.75ZM9.55939 17.125H17.4406L15.1863 21.2672L16.2003 25.7922L18.2606 17.1299L18.8835 17.1611C23.2858 17.3815 26.75 21.1507 26.75 25.75V28.1875C26.75 30.1195 25.2485 31.75 23.3214 31.75H3.67857C1.7515 31.75 0.25 30.1195 0.25 28.1875V25.75C0.25 21.1507 3.71416 17.3815 8.11651 17.1611L8.73936 17.1299L10.7997 25.7922L11.8137 21.2672L9.55939 17.125ZM12.0835 18.625L13.4006 21.0453L11.5533 29.289L10.0918 29.2985L7.57561 18.7196C4.30884 19.1979 1.75 22.1251 1.75 25.75V28.1875C1.75 29.3609 2.64805 30.25 3.67857 30.25H23.3214C24.3519 30.25 25.25 29.3609 25.25 28.1875V25.75C25.25 22.1251 22.6912 19.1979 19.4244 18.7196L16.9082 29.2985L15.4467 29.289L13.5994 21.0453L14.9165 18.625H12.0835Z" />
+                </svg>
+            </a>
+            <nav class="lang-box">
+                <button id="ro" class="header__btn translate" data-btn="ro">
+                    RO
+                </button>
+                <button id="ru" class="header__btn translate" data-btn="ru">
+                    RU
+                </button>
+                <button id="en" class="header__btn translate" data-btn="en">
+                    EN
+                </button>
+            </nav>
         </div>
-        <a href="#" class="cabinet" data-toggle="modal">
-          <svg
-            width="27"
-            height="32"
-            viewBox="0 0 27 32"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M5.60714 8.5C5.60714 3.97811 9.10641 0.25 13.5 0.25C17.8936 0.25 21.3929 3.97811 21.3929 8.5C21.3929 13.0219 17.8936 16.75 13.5 16.75C9.10641 16.75 5.60714 13.0219 5.60714 8.5ZM13.5 1.75C10.003 1.75 7.10714 4.73673 7.10714 8.5C7.10714 12.2633 10.003 15.25 13.5 15.25C16.997 15.25 19.8929 12.2633 19.8929 8.5C19.8929 4.73673 16.997 1.75 13.5 1.75ZM9.55939 17.125H17.4406L15.1863 21.2672L16.2003 25.7922L18.2606 17.1299L18.8835 17.1611C23.2858 17.3815 26.75 21.1507 26.75 25.75V28.1875C26.75 30.1195 25.2485 31.75 23.3214 31.75H3.67857C1.7515 31.75 0.25 30.1195 0.25 28.1875V25.75C0.25 21.1507 3.71416 17.3815 8.11651 17.1611L8.73936 17.1299L10.7997 25.7922L11.8137 21.2672L9.55939 17.125ZM12.0835 18.625L13.4006 21.0453L11.5533 29.289L10.0918 29.2985L7.57561 18.7196C4.30884 19.1979 1.75 22.1251 1.75 25.75V28.1875C1.75 29.3609 2.64805 30.25 3.67857 30.25H23.3214C24.3519 30.25 25.25 29.3609 25.25 28.1875V25.75C25.25 22.1251 22.6912 19.1979 19.4244 18.7196L16.9082 29.2985L15.4467 29.289L13.5994 21.0453L14.9165 18.625H12.0835Z"
-            />
-          </svg>
-        </a>
-        <nav class="lang-box">
-          <button id="ro" class="header__btn translate" data-btn="ro">
-            RO
-          </button>
-          <button id="ru" class="header__btn translate" data-btn="ru">
-            RU
-          </button>
-          <button id="en" class="header__btn translate" data-btn="en">
-            EN
-          </button>
-        </nav>
-      </div>
     </nav>
     <nav class="navbar-lang">
-      <div class="container navbar-lang-container">
-        <nav class="lang-box">
-          <button id="ro" class="header__btn translate" data-btn="ro">
-            RO
-          </button>
-          <button id="ru" class="header__btn translate" data-btn="ru">
-            RU
-          </button>
-          <button id="en" class="header__btn translate" data-btn="en">
-            EN
-          </button>
-        </nav>
-        Ce mărfuri se transportă în containere?
-      </div>
+        <div class="container navbar-lang-container">
+            <nav class="lang-box">
+                <button id="ro" class="header__btn translate" data-btn="ro">
+                    RO
+                </button>
+                <button id="ru" class="header__btn translate" data-btn="ru">
+                    RU
+                </button>
+                <button id="en" class="header__btn translate" data-btn="en">
+                    EN
+                </button>
+            </nav>
+            Ce mărfuri se transportă în containere?
+        </div>
     </nav>
     <header id="top">
-      <div class="container header-container">
-        <div class="header-content">
-          <div class="hdrTitle-wrapper">
-            <h1 class="hdrTitleText1 lang" key="hdr1">transportul</h1>
-            <h1 class="hdrTitleText2 lang" key="hdr2">containerizat</h1>
-            <h1 class="hdrTitleText3 lang" key="hdr3">rutier</h1>
-          </div>
-          <div class="header-text">
-            <p class="lang" key="p1">
-              Efectuăm livrare container de marfa din portul Constanța (România)
-              către Republica Moldova. Oferim o politică flexibilă de prețuri, o
-              abordare individuală a clientului, minimizarea costurilor și
-              livrarea promptă.
-            </p>
-            <p class="lang" key="p2">
-              Avem propria noastră flotă de camioane DAF la dispoziția noastră.
-            </p>
-          </div>
-          <div class="header-items">
-            <div class="header-item">
-              <svg width="116" height="116" class="logo">
-                <use href="img/svg/sprite.svg#trucks_ico"></use>
-              </svg>
-              <div class="header-items-text lang" key="hdrIcoTxt1">
-                camioane proprii
-              </div>
+        <div class="container header-container">
+            <div class="header-content">
+                <div class="hdrTitle-wrapper">
+                    <h1 class="hdrTitleText1 lang" key="hdr1">transportul</h1>
+                    <h1 class="hdrTitleText2 lang" key="hdr2">containerizat</h1>
+                    <h1 class="hdrTitleText3 lang" key="hdr3">rutier</h1>
+                </div>
+                <div class="header-text">
+                    <p class="lang" key="p1">
+                        Efectuăm livrare container de marfa din portul Constanța (România)
+                        către Republica Moldova. Oferim o politică flexibilă de prețuri, o
+                        abordare individuală a clientului, minimizarea costurilor și
+                        livrarea promptă.
+                    </p>
+                    <p class="lang" key="p2">
+                        Avem propria noastră flotă de camioane DAF la dispoziția noastră.
+                    </p>
+                </div>
+                <div class="header-items">
+                    <div class="header-item">
+                        <svg width="116" height="116" class="logo">
+                            <use href="/static/images/svg/sprite.svg#trucks_ico"></use>
+                        </svg>
+                        <div class="header-items-text lang" key="hdrIcoTxt1">
+                            camioane proprii
+                        </div>
+                    </div>
+                    <div class="header-item">
+                        <svg width="116" height="116" class="logo">
+                            <use href="/static/images/svg/sprite.svg#del-ico"></use>
+                        </svg>
+                        <div class="header-items-text lang" key="hdrIcoTxt2">
+                            livrare operativă
+                        </div>
+                    </div>
+                    <div class="header-item">
+                        <svg width="116" height="116" class="logo">
+                            <use href="/static/images/svg/sprite.svg#port_ico"></use>
+                        </svg>
+                        <div class="header-items-text lang" key="hdrIcoTxt3">
+                            din port «la ușa»
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="header-item">
-              <svg width="116" height="116" class="logo">
-                <use href="img/svg/sprite.svg#del-ico"></use>
-              </svg>
-              <div class="header-items-text lang" key="hdrIcoTxt2">
-                livrare operativă
-              </div>
-            </div>
-            <div class="header-item">
-              <svg width="116" height="116" class="logo">
-                <use href="img/svg/sprite.svg#port_ico"></use>
-              </svg>
-              <div class="header-items-text lang" key="hdrIcoTxt3">
-                din port «la ușa»
-              </div>
-            </div>
-          </div>
+            <picture>
+                <source srcset="/static/images/fon_elips.webp" type="image/webp" />
+                <source srcset="/static/images/fon_elips.png" type="image/png" />
+                <img src="/static/images/fon_elips.png" alt="fon-elips" class="header-elips" />
+            </picture>
+            <picture>
+                <source srcset="/static/images/bg_image.webp" type="image/webp" />
+                <source srcset="/static/images/bg_image.jpg" type="image/jpg" />
+                <img src="/static/images/bg_image.jpg" alt="DAF" />
+            </picture>
         </div>
-        <picture>
-          <source srcset="img/fon_elips.webp" type="image/webp" />
-          <source srcset="img/fon_elips.png" type="image/png" />
-          <img src="img/fon_elips.png" alt="fon-elips" class="header-elips" />
-        </picture>
-        <picture>
-          <source srcset="img/bg_image.webp" type="image/webp" />
-          <source srcset="img/bg_image.jpg" type="image/jpg" />
-          <img src="img/bg_image.jpg" alt="DAF" />
-        </picture>
-      </div>
     </header>
     <section id="servicii">
-      <div class="container container-servicii">
-        <h2 class="lang" key="h2_1">servicii</h2>
-        <div class="servicii-content">
-          <div class="servicii-text-item">
-            <h3 class="servicii-text-title lang" key="h3_1">
-              Transportul containerizat rutier
-            </h3>
-            <p class="servicii-text lang" key="p3">
-              Acesta este transportul de containere pe drum. Containerele sunt
-              structuri metalice mari care sunt considerate intermodale unități
-              de transport (ITU). Sunt de obicei folosite pentru a transporta
-              cantități mari de mărfuri. Pe parcurs, acestea sunt transportate
-              de nave-containere.
-            </p>
-            <p class="servicii-text lang" key="p4">
-              MC Express are propria sa flotă de vehicule de marfă, formată din
-              câteva zeci de camioane DAF, care garantează în mod inevitabil
-              livrarea la timp și în siguranță a mărfii dumneavoastră.
-            </p>
-          </div>
-          <div class="container wrapper">
-            <div class="slider">
-              <div class="slider__item filter">
-                <img src="img/slides/truck1.webp" alt="truck1" />
-              </div>
-              <div class="slider__item filter">
-                <img src="img/slides/truck2.webp" alt="truck2" />
-              </div>
-              <div class="slider__item">
-                <img src="img/slides/truck3.webp" alt="truck3" />
-              </div>
+        <div class="container container-servicii">
+            <h2 class="lang" key="h2_1">servicii</h2>
+            <div class="servicii-content">
+                <div class="servicii-text-item">
+                    <h3 class="servicii-text-title lang" key="h3_1">
+                        Transportul containerizat rutier
+                    </h3>
+                    <p class="servicii-text lang" key="p3">
+                        Acesta este transportul de containere pe drum. Containerele sunt
+                        structuri metalice mari care sunt considerate intermodale unități
+                        de transport (ITU). Sunt de obicei folosite pentru a transporta
+                        cantități mari de mărfuri. Pe parcurs, acestea sunt transportate
+                        de nave-containere.
+                    </p>
+                    <p class="servicii-text lang" key="p4">
+                        MC Express are propria sa flotă de vehicule de marfă, formată din
+                        câteva zeci de camioane DAF, care garantează în mod inevitabil
+                        livrarea la timp și în siguranță a mărfii dumneavoastră.
+                    </p>
+                </div>
+                <div class="container wrapper">
+                    <div class="slider">
+                        <div class="slider__item filter">
+                            <img src="/static/images/slides/truck1.webp" alt="truck1" />
+                        </div>
+                        <div class="slider__item filter">
+                            <img src="/static/images/slides/truck2.webp" alt="truck2" />
+                        </div>
+                        <div class="slider__item">
+                            <img src="/static/images/slides/truck3.webp" alt="truck3" />
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
     <section id="info">
-      <div class="container container-questions">
-        <div class="servicii-content">
-          <div class="questions-text-item">
-            <h3 class="lang" key="h3_2">
-              Ce mărfuri se transportă în containere?
-            </h3>
-            <p class="servicii-text lang" key="p4">
-              Totul este foarte simplu, transportul containerelor este potrivit
-              pentru toate tipurile de marfă. De exemplu :
-            </p>
-            <ul>
-              <li class="lang" key="li1">
-                Produse agricole (cereale, lapte etc.);
-              </li>
-              <li class="lang" key="li2">
-                Produse alimentare (alimente congelate, făină, legume etc.);
-              </li>
-              <li class="lang" key="li3">
-                Produse de mobilier (dulapuri, mese, scaune etc.);
-              </li>
-              <li class="lang" key="li4">
-                produse IT sau aparate electrocasnice;
-              </li>
-              <li class="lang" key="li5">Produse farmaceutice.</li>
-            </ul>
-            <h3 class="lang" key="h3_3">
-              Care este capacitatea de încărcare a containerului?
-            </h3>
-            <p class="servicii-text lang" key="p5">
-              Acest lucru va depinde de recipientul folosit. Totuși, ca și în
-              cazul paleților, există standarde internaționale care definesc
-              dimensiunile fiecărui tip de container.
-            </p>
-            <h3 class="lang" key="h3_4">Transportul mărfurilor periculoase.</h3>
-            <p class="servicii-text lang" key="p6">
-              Mărfurile periculoase sunt substanțe care necesită precauții
-              speciale în timpul transportul și depozitarea acestora.
-            </p>
-            <p class="servicii-text lang" key="p7">
-              Transportul rutier de mărfuri periculoase este reglementat prin
-              ADR. ADR este un acord din 48 de state care convine asupra unor
-              reguli comune pentru transportul mărfurilor periculoase peste
-              granițele țărilor participante la acord. ADR este un acronim
-              pentru „Acordul european de transport rutier de mărfuri
-              periculoase” (Acordul european privind transportul rutier
-              internațional al mărfurilor periculoase).
-            </p>
-            <p class="servicii-text lang" key="p8">
-              Până în prezent, lista include peste trei mii de mărfuri
-              periculoase. Întreaga listă este împărțită în clase pericole cu
-              subclasele lor.
-            </p>
-          </div>
-          <div class="questions-items">
-            <svg width="250" height="320" class="container-img-svg">
-              <use href="img/svg/sprite.svg#container"></use>
-            </svg>
-            <a href="#equipment" class="equipment__btn lang" key="button1"
-              >specificații containere</a
-            >
-            <a href="#adr" class="adr__btn lang" key="button2">
-              clasificarea mărfurilor periculoase adr</a
-            >
-          </div>
+        <div class="container container-questions">
+            <div class="servicii-content">
+                <div class="questions-text-item">
+                    <h3 class="lang" key="h3_2">
+                        Ce mărfuri se transportă în containere?
+                    </h3>
+                    <p class="servicii-text lang" key="p4">
+                        Totul este foarte simplu, transportul containerelor este potrivit
+                        pentru toate tipurile de marfă. De exemplu :
+                    </p>
+                    <ul>
+                        <li class="lang" key="li1">
+                            Produse agricole (cereale, lapte etc.);
+                        </li>
+                        <li class="lang" key="li2">
+                            Produse alimentare (alimente congelate, făină, legume etc.);
+                        </li>
+                        <li class="lang" key="li3">
+                            Produse de mobilier (dulapuri, mese, scaune etc.);
+                        </li>
+                        <li class="lang" key="li4">
+                            produse IT sau aparate electrocasnice;
+                        </li>
+                        <li class="lang" key="li5">Produse farmaceutice.</li>
+                    </ul>
+                    <h3 class="lang" key="h3_3">
+                        Care este capacitatea de încărcare a containerului?
+                    </h3>
+                    <p class="servicii-text lang" key="p5">
+                        Acest lucru va depinde de recipientul folosit. Totuși, ca și în
+                        cazul paleților, există standarde internaționale care definesc
+                        dimensiunile fiecărui tip de container.
+                    </p>
+                    <h3 class="lang" key="h3_4">Transportul mărfurilor periculoase.</h3>
+                    <p class="servicii-text lang" key="p6">
+                        Mărfurile periculoase sunt substanțe care necesită precauții
+                        speciale în timpul transportul și depozitarea acestora.
+                    </p>
+                    <p class="servicii-text lang" key="p7">
+                        Transportul rutier de mărfuri periculoase este reglementat prin
+                        ADR. ADR este un acord din 48 de state care convine asupra unor
+                        reguli comune pentru transportul mărfurilor periculoase peste
+                        granițele țărilor participante la acord. ADR este un acronim
+                        pentru „Acordul european de transport rutier de mărfuri
+                        periculoase” (Acordul european privind transportul rutier
+                        internațional al mărfurilor periculoase).
+                    </p>
+                    <p class="servicii-text lang" key="p8">
+                        Până în prezent, lista include peste trei mii de mărfuri
+                        periculoase. Întreaga listă este împărțită în clase pericole cu
+                        subclasele lor.
+                    </p>
+                </div>
+                <div class="questions-items">
+                    <svg width="250" height="320" class="container-img-svg">
+                        <use href="/static/images/svg/sprite.svg#container"></use>
+                    </svg>
+                    <a href="#equipment" class="equipment__btn lang" key="button1">specificații containere</a>
+                    <a href="#adr" class="adr__btn lang" key="button2">
+                        clasificarea mărfurilor periculoase adr</a>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
     <section id="equipment" class="container equipment">
-      <div class="equipment-header">
-        <div class="equipment-title">
-          equipment specification <br />
-          specificatii containere <br />
-          размеры контейнерного оборудования
+        <div class="equipment-header">
+            <div class="equipment-title">
+                equipment specification <br />
+                specificatii containere <br />
+                размеры контейнерного оборудования
+            </div>
+            <a href="#adr" class="adr__btn lang" key="button2">
+                clasificarea<br />
+                mărfurilor<br />
+                periculoase adr</a>
         </div>
-        <a href="#adr" class="adr__btn lang" key="button2">
-          clasificarea<br />
-          mărfurilor<br />
-          periculoase adr</a
-        >
-      </div>
-      <div class="equipment-image">
-        <picture>
-          <source srcset="img/equipment_specification.webp" type="image/webp" />
-          <source srcset="img/equipment_specification.jpg" type="image/jpg" />
-          <img
-            src="img/equipment_specification.jpg"
-            alt="equipment_specification"
-          />
-        </picture>
-      </div>
+        <div class="equipment-image">
+            <picture>
+                <source srcset="/static/images/equipment_specification.webp" type="image/webp" />
+                <source srcset="/static/images/equipment_specification.jpg" type="image/jpg" />
+                <img src="/static/images/equipment_specification.jpg" alt="equipment_specification" />
+            </picture>
+        </div>
     </section>
     <section id="adr" class="container adr">
-      <div class="adr-header">
-        <div class="adr-title lang" key="adr_title">
-          Clasificarea mărfurilor periculoase
+        <div class="adr-header">
+            <div class="adr-title lang" key="adr_title">
+                Clasificarea mărfurilor periculoase
+            </div>
+            <div class="adr-title"><b>ADR</b></div>
+            <a href="#equipment" class="equipment__btn lang" key="button1">
+                specificații<br />
+                containere</a>
         </div>
-        <div class="adr-title"><b>ADR</b></div>
-        <a href="#equipment" class="equipment__btn lang" key="button1">
-          specificații<br />
-          containere</a
-        >
-      </div>
-      <div class="equipment-image">
-        <picture>
-          <source srcset="img/ard_ru.webp" type="image/webp" />
-          <source srcset="img/ard_ru.jpg" type="image/jpg" />
-          <img src="img/ard_ru.jpg" alt="adr" />
-        </picture>
-      </div>
+        <div class="equipment-image">
+            <picture>
+                <source srcset="/static/images/ard_ru.webp" type="image/webp" />
+                <source srcset="/static/images/ard_ru.jpg" type="image/jpg" />
+                <img src="/static/images/ard_ru.jpg" alt="adr" />
+            </picture>
+        </div>
     </section>
     <section id="contacte">
-      <div class="container container-contacte">
-        <div class="contacte-content">
-          <div class="contacts-list">
-            <div class="contacte-title">
-              <h2 class="lang" key="h2_2">contacte</h2>
-            </div>
-            <div class="contacts-list-item">
-              <svg width="28" height="28">
-                <use href="img/svg/sprite.svg#icon _phone"></use>
-              </svg>
-              Tel: +373 69603007
-            </div>
-            <div class="contacts-list-item">
-              <svg width="28" height="28">
-                <use href="img/svg/sprite.svg#icon _map"></use>
-              </svg>
-              <div class="address">
-                <div class="address-item lang" key="address1">
-                  Republica Moldova, MD-2005,
+        <div class="container container-contacte">
+            <div class="contacte-content">
+                <div class="contacts-list">
+                    <div class="contacte-title">
+                        <h2 class="lang" key="h2_2">contacte</h2>
+                    </div>
+                    <div class="contacts-list-item">
+                        <svg width="28" height="28">
+                            <use href="/static/images/svg/sprite.svg#icon _phone"></use>
+                        </svg>
+                        Tel: +373 69603007
+                    </div>
+                    <div class="contacts-list-item">
+                        <svg width="28" height="28">
+                            <use href="/static/images/svg/sprite.svg#icon _map"></use>
+                        </svg>
+                        <div class="address">
+                            <div class="address-item lang" key="address1">
+                                Republica Moldova, MD-2005,
+                            </div>
+                            <div class="address-item lang" key="address2">
+                                mun. Chișinău, str. Cahul, 8, (ap.) 51
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts-list-item">
+                        <svg width="28" height="22">
+                            <use href="/static/images/svg/sprite.svg#icon _mail"></use>
+                        </svg>
+                        E-mail: dbogachov@gmail.com
+                    </div>
+                    <svg class="container_bot" width="260" height="180">
+                        <use href="/static/images/svg/sprite.svg#container_bot"></use>
+                    </svg>
                 </div>
-                <div class="address-item lang" key="address2">
-                  mun. Chișinău, str. Cahul, 8, (ap.) 51
+                <div class="message-form">
+                    <div class="message-form-title lang" key="formTitle">
+                        Scrie un mesaj
+                    </div>
+                    <div class="message-form-title-text lang" key="formTitleTxt">
+                        Dacă aveți întrebări sau sugestii de cooperare, completați
+                        formularul de mai jos
+                    </div>
+                    <!-- Форма обратной связи -->
+                    <form id="sendMessageForm">
+                        <div class="input-box">
+                            <input type="text" class="input-with-icon" placeholder="Name" name="name" id="name" required/>
+                        </div>
+                        <div class="input-box">
+                            <input type="email" placeholder="E-mail" name="email" id="email" required/>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" placeholder="Phone" name="phone" id="phone" required/>
+                        </div>
+                        <div class="input-box message-box lang" key="plh3">
+                            <textarea placeholder="Message text" required></textarea>
+                        </div>
+
+                    </form>
+                    <button class="button" onclick="sendMessage()">
+                        <input class="lang" key="send" type="button" value="Send" />
+                    </button>
                 </div>
-              </div>
             </div>
-            <div class="contacts-list-item">
-              <svg width="28" height="22">
-                <use href="img/svg/sprite.svg#icon _mail"></use>
-              </svg>
-              E-mail: dbogachov@gmail.com
-            </div>
-            <svg class="container_bot" width="260" height="180">
-              <use href="img/svg/sprite.svg#container_bot"></use>
-            </svg>
-          </div>
-          <div class="message-form">
-            <div class="message-form-title lang" key="formTitle">
-              Scrie un mesaj
-            </div>
-            <div class="message-form-title-text lang" key="formTitleTxt">
-              Dacă aveți întrebări sau sugestii de cooperare, completați
-              formularul de mai jos
-            </div>
-            <!-- Форма обратной связи -->
-            <form action="#">
-              <div class="input-box">
-                <input
-                  type="text"
-                  class="input-with-icon"
-                  placeholder="Name"
-                  name="name"
-                  id="name"
-                />
-              </div>
-              <div class="input-box">
-                <input
-                  type="text"
-                  placeholder="E-mail"
-                  name="email"
-                  id="email"
-                />
-              </div>
-              <div class="input-box">
-                <input
-                  type="text"
-                  placeholder="Telefon"
-                  name="phone"
-                  id="phone"
-                />
-              </div>
-              <div class="input-box message-box lang" key="plh3">
-                <textarea placeholder="Message text"></textarea>
-              </div>
-              <div class="button">
-                <input class="lang" key="send" type="button" value="Send" />
-              </div>
-            </form>
-          </div>
         </div>
-      </div>
     </section>
     <footer>
-      <div class="container footer-container">
-        © 2024 MC EXPRESS. All rights reserved.
-      </div>
+        <div class="container footer-container">
+            © 2024 MC EXPRESS. All rights reserved.
+        </div>
     </footer>
     <div class="modal">
-      <div class="modal-dialog">
-        <h2 class="modal-title lang" key="logIn">Zona Personală</h2>
-        <a
-          href="#"
-          class="modal-close"
-          data-toggle="modal"
-          data-target="#feedback-modal"
-        >
-          <svg class="close-icon" width="24" height="24">
-            <use href="img/svg/sprite.svg#close"></use>
-          </svg>
-        </a>
-        <form action="#">
-          <div class="input-box">
-            <input
-              type="text"
-              class="input-with-icon"
-              placeholder="Name"
-              name="name"
-              id="name"
-            />
-          </div>
-          <div class="input-box">
-            <input type="text" placeholder="Password" name="phone" id="phone" />
-          </div>
-          <div class="button">
-            <input class="lang" key="send" type="button" value="Enter" />
-          </div>
-        </form>
-      </div>
+        <div class="modal-dialog">
+            <h2 class="modal-title lang" key="logIn">Zona Personală</h2>
+            <a href="#" class="modal-close" data-toggle="modal" data-target="#feedback-modal">
+                <svg class="close-icon" width="24" height="24">
+                    <use href="/static/images/svg/sprite.svg#close"></use>
+                </svg>
+            </a>
+            <form action="/login" method="POST">
+                <div class="input-box">
+                    <input type="email" class="input-with-icon" placeholder="Name" name="login" id="name" required autocomplete="username"/>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required pattern="[^ ]+" minlength="3" maxlength="30" name="pass" autocomplete="current-password"/>
+                </div>
+                <button class="button">
+                    <input class="lang" key="send" type="button" value="Enter" />
+                </button>
+            </form>
+        </div>
     </div>
-    <script
-      type="text/javascript"
-      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-    ></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+
+    
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <script src="/static/scripts/js/jquery.min.js"></script>
+    <script src="/static/scripts/js/slick.min.js"></script>
+    <script src="/static/scripts/js/script.js"></script>
+
+</body>
+
 </html>
+
+{{end}}

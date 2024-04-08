@@ -44,6 +44,8 @@ $(document).ready(function () {
     ],
   });
 });
+
+
 // LANGS
 const langButtons = document.querySelectorAll("[data-btn]");
 const allLangs = ["ro", "ru", "en"];
@@ -60,7 +62,6 @@ const homeTexts = {
   },
 };
 
-// Проверка пути страницы сайта
 function checkPagePathName() {
   switch (currentPathName) {
     case "/index.html":
@@ -75,9 +76,7 @@ function checkPagePathName() {
       break;
   }
 }
-checkPagePathName();
 
-// Изменение языка у текстов
 function changeLang() {
   for (const key in currentTexts) {
     let elem = document.querySelector(`[data-lang=${key}]`);
@@ -86,9 +85,8 @@ function changeLang() {
     }
   }
 }
-changeLang();
 
-// Вешаем обработчики на каждую кнопку
+
 langButtons.forEach((btn) => {
   btn.addEventListener("click", (event) => {
     if (!event.target.classList.contains("header__btn_active")) {
@@ -101,14 +99,12 @@ langButtons.forEach((btn) => {
   });
 });
 
-// Сброс активного класса у переданного массива элементов
 function resetActiveClass(arr, activeClass) {
   arr.forEach((elem) => {
     elem.classList.remove(activeClass);
   });
 }
 
-// Проверка активной кнопки
 function checkActiveLangButton() {
   switch (currentLang) {
     case "ro":
@@ -134,9 +130,7 @@ function checkActiveLangButton() {
       break;
   }
 }
-checkActiveLangButton();
 
-// Проверка языка браузера
 function checkBrowserLang() {
   const navLang = navigator.language.slice(0, 2).toLowerCase();
   const result = allLangs.some((elem) => {
@@ -153,7 +147,7 @@ console.log("navigator.language", checkBrowserLang());
 const modal = document.querySelector(".modal");
 const modalToggle = document.querySelectorAll("[data-toggle=modal]");
 const modalClose = document.querySelector(".modal-close");
-console.log(modalToggle);
+// console.log(modalToggle);
 modalToggle.forEach((element) => {
   element.addEventListener("click", (event) => {
     event.preventDefault();
@@ -164,3 +158,13 @@ modalClose.addEventListener("click", (event) => {
   event.preventDefault();
   modal.classList.remove("is-open");
 });
+
+checkActiveLangButton();
+checkPagePathName();
+changeLang();
+
+async function sendMessage() {
+  let form = document.getElementById('sendMessageForm'),
+    data = new FormData(form);
+    console.log(data);
+};
