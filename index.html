@@ -41,7 +41,7 @@
           </li>
         </ul>
         <div class="navbar-phone">
-          <svg width="34" height="34">
+          <svg width="34" height="34" class="phone">
             <use href="img/svg/sprite.svg#phone icon"></use>
           </svg>
           <div class="navbar-phone-text">+373 696-03-007</div>
@@ -50,6 +50,7 @@
           <svg
             width="27"
             height="32"
+            class="cabico"
             viewBox="0 0 27 32"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
@@ -114,24 +115,39 @@
               <svg width="110" height="110" class="header-ico">
                 <use href="img/svg/sprite.svg#trucks_ico"></use>
               </svg>
-              <div class="header-items-text lang" key="hdrIcoTxt1">
-                camioane proprii
+              <div class="header-items-text">
+                <div class="header-item-text lang" key="hdrIcoTxt1">
+                  camioane
+                </div>
+                <div class="header-item-text lang" key="hdrIcoTxt11">
+                  proprii
+                </div>
               </div>
             </div>
             <div class="header-item">
               <svg width="110" height="110" class="header-ico">
                 <use href="img/svg/sprite.svg#del-ico"></use>
               </svg>
-              <div class="header-items-text lang" key="hdrIcoTxt2">
-                livrare operativă
+              <div class="header-items-text">
+                <div class="header-item-text lang" key="hdrIcoTxt2">
+                  livrare
+                </div>
+                <div class="header-item-text lang" key="hdrIcoTxt22">
+                  operativă
+                </div>
               </div>
             </div>
             <div class="header-item">
               <svg width="110" height="110" class="header-ico">
                 <use href="img/svg/sprite.svg#port_ico"></use>
               </svg>
-              <div class="header-items-text lang" key="hdrIcoTxt3">
-                din port «la ușa»
+              <div class="header-items-text lang">
+                <div class="header-item-text lang" key="hdrIcoTxt3">
+                  din port
+                </div>
+                <div class="header-item-text lang" key="hdrIcoTxt33">
+                  «la ușa»
+                </div>
               </div>
             </div>
           </div>
@@ -197,19 +213,21 @@
               pentru toate tipurile de marfă. De exemplu :
             </p>
             <ul>
-              <li class="lang" key="li1">
+              <li class="servicii-text lang" key="li1">
                 Produse agricole (cereale, lapte etc.);
               </li>
-              <li class="lang" key="li2">
+              <li class="servicii-text lang" key="li2">
                 Produse alimentare (alimente congelate, făină, legume etc.);
               </li>
-              <li class="lang" key="li3">
+              <li class="servicii-text lang" key="li3">
                 Produse de mobilier (dulapuri, mese, scaune etc.);
               </li>
-              <li class="lang" key="li4">
+              <li class="servicii-text lang" key="li4">
                 produse IT sau aparate electrocasnice;
               </li>
-              <li class="lang" key="li5">Produse farmaceutice.</li>
+              <li class="servicii-text lang" key="li5">
+                Produse farmaceutice.
+              </li>
             </ul>
             <h3 class="lang" key="h3_3">
               Care este capacitatea de încărcare a containerului?
@@ -241,7 +259,7 @@
           </div>
           <div class="questions-items">
             <svg width="250" height="320" class="container-img-svg">
-              <use href="img/svg/sprite.svg#container"></use>
+              <use href="img/svg/sprite.svg#standard dry"></use>
             </svg>
             <a href="#equipment" class="equipment__btn lang" key="button1"
               >specificații containere</a
@@ -266,34 +284,698 @@
           periculoase adr</a
         >
       </div>
-      <div class="equipment-image">
-        <picture>
-          <source srcset="img/equipment_specification.webp" type="image/webp" />
-          <source srcset="img/equipment_specification.jpg" type="image/jpg" />
-          <img
-            src="img/equipment_specification.jpg"
-            alt="equipment_specification"
-          />
-        </picture>
+      <div class="container-equipment">
+        <div class="equipment-items">
+          <div class="equipment-item">
+            <h3 class="equipment-item-title">standard dry</h3>
+            <h1 class="accent-num">20’</h1>
+            <div class="equipment-item-content">
+              <div class="dimensions">
+                <ul>
+                  <li class="dimensions lang">Length / Lungime / Длина</li>
+                  <li class="dimensions lang">Width / Lăţime / Ширина</li>
+                  <li class="dimensions lang">Height / Înălţime / Высота</li>
+                  <li class="dimensions lang">Capacity / Capacitate / Объем</li>
+                </ul>
+              </div>
+              <div class="num">
+                <ul>
+                  <li class="num lang">5.900 м</li>
+                  <li class="num lang">2.350 м</li>
+                  <li class="num lang">2.390 м</li>
+                  <li class="num lang">33.200 м³</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="equipment-item">
+            <div class="accent-num">40’</div>
+            <div class="equipment-item-content">
+              <div class="equipment-item-content">
+                <div class="dimensions">
+                  <ul>
+                    <li class="dimensions lang">Length / Lungime / Длина</li>
+                    <li class="dimensions lang">Width / Lăţime / Ширина</li>
+                    <li class="dimensions lang">Height / Înălţime / Высота</li>
+                    <li class="dimensions lang">
+                      Capacity / Capacitate / Объем
+                    </li>
+                  </ul>
+                </div>
+                <div class="num">
+                  <ul>
+                    <li class="num lang">12.035 м</li>
+                    <li class="num lang">2.350 м</li>
+                    <li class="num lang">2.390 м</li>
+                    <li class="num lang">67.700 м³</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="equipment-object">
+            <svg width="250" height="320" class="container-img-svg">
+              <use href="img/svg/sprite.svg#standard dry"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="equipment-items">
+          <div class="equipment-item">
+            <h3 class="equipment-item-title">flat rack</h3>
+            <h1 class="accent-num">20’</h1>
+            <div class="equipment-item-content">
+              <div class="dimensions">
+                <ul>
+                  <li class="dimensions lang">Length / Lungime / Длина</li>
+                  <li class="dimensions lang">Width / Lăţime / Ширина</li>
+                  <li class="dimensions lang">Height / Înălţime / Высота</li>
+                </ul>
+              </div>
+              <div class="num">
+                <ul>
+                  <li class="num lang">5.620 м</li>
+                  <li class="num lang">2.200 м</li>
+                  <li class="num lang">2.230 м</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="equipment-item">
+            <div class="accent-num">40’</div>
+            <div class="equipment-item-content">
+              <div class="equipment-item-content">
+                <div class="dimensions">
+                  <ul>
+                    <li class="dimensions lang">Length / Lungime / Длина</li>
+                    <li class="dimensions lang">Width / Lăţime / Ширина</li>
+                    <li class="dimensions lang">Height / Înălţime / Высота</li>
+                  </ul>
+                </div>
+                <div class="num">
+                  <ul>
+                    <li class="num lang">12.080 м</li>
+                    <li class="num lang">2.440 м</li>
+                    <li class="num lang">2.100 м</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="equipment-object">
+            <svg width="250" height="320" class="container-img-svg">
+              <use href="img/svg/sprite.svg#flat rack"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="equipment-items">
+          <div class="equipment-item">
+            <h3 class="equipment-item-title">reefer</h3>
+            <h1 class="accent-num">20’</h1>
+            <div class="equipment-item-content">
+              <div class="dimensions">
+                <ul>
+                  <li class="dimensions lang">Length / Lungime / Длина</li>
+                  <li class="dimensions lang">Width / Lăţime / Ширина</li>
+                  <li class="dimensions lang">Height / Înălţime / Высота</li>
+                  <li class="dimensions lang">Capacity / Capacitate / Объем</li>
+                </ul>
+              </div>
+              <div class="num">
+                <ul>
+                  <li class="num lang">5.425 м</li>
+                  <li class="num lang">2.275 м</li>
+                  <li class="num lang">2.260 м</li>
+                  <li class="num lang">28.300 м³</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="equipment-item">
+            <div class="accent-num">40’</div>
+            <div class="equipment-item-content">
+              <div class="equipment-item-content">
+                <div class="dimensions">
+                  <ul>
+                    <li class="dimensions lang">Length / Lungime / Длина</li>
+                    <li class="dimensions lang">Width / Lăţime / Ширина</li>
+                    <li class="dimensions lang">Height / Înălţime / Высота</li>
+                    <li class="dimensions lang">
+                      Capacity / Capacitate / Объем
+                    </li>
+                  </ul>
+                </div>
+                <div class="num">
+                  <ul>
+                    <li class="num lang">11.495 м</li>
+                    <li class="num lang">2.270 м</li>
+                    <li class="num lang">2.200 м</li>
+                    <li class="num lang">57.800 м³</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="equipment-object">
+            <svg width="250" height="320" class="container-img-svg">
+              <use href="img/svg/sprite.svg#reefer"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="equipment-items">
+          <div class="equipment-item">
+            <h3 class="equipment-item-title">high cube</h3>
+            <h1 class="accent-num">40’</h1>
+            <div class="equipment-item-content">
+              <div class="dimensions">
+                <ul>
+                  <li class="dimensions lang">Length / Lungime / Длина</li>
+                  <li class="dimensions lang">Width / Lăţime / Ширина</li>
+                  <li class="dimensions lang">Height / Înălţime / Высота</li>
+                  <li class="dimensions lang">Capacity / Capacitate / Объем</li>
+                </ul>
+              </div>
+              <div class="num">
+                <ul>
+                  <li class="num lang">12.035 м</li>
+                  <li class="num lang">2.350 м</li>
+                  <li class="num lang">2.695 м</li>
+                  <li class="num lang">76.300 м³</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="equipment-item">
+            <div class="accent-num">45’</div>
+            <div class="equipment-item-content">
+              <div class="equipment-item-content">
+                <div class="dimensions">
+                  <ul>
+                    <li class="dimensions lang">Length / Lungime / Длина</li>
+                    <li class="dimensions lang">Width / Lăţime / Ширина</li>
+                    <li class="dimensions lang">Height / Înălţime / Высота</li>
+                    <li class="dimensions lang">
+                      Capacity / Capacitate / Объем
+                    </li>
+                  </ul>
+                </div>
+                <div class="num">
+                  <ul>
+                    <li class="num lang">13.555 м</li>
+                    <li class="num lang">2.350 м</li>
+                    <li class="num lang">2.695 м</li>
+                    <li class="num lang">86.100 м³</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="equipment-object">
+            <svg width="250" height="320" class="container-img-svg">
+              <use href="img/svg/sprite.svg#high cube"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="equipment-items">
+          <div class="equipment-item">
+            <h3 class="equipment-item-title">open top</h3>
+            <h1 class="accent-num">20’</h1>
+            <div class="equipment-item-content">
+              <div class="dimensions">
+                <ul>
+                  <li class="dimensions lang">Length / Lungime / Длина</li>
+                  <li class="dimensions lang">Width / Lăţime / Ширина</li>
+                  <li class="dimensions lang">Height / Înălţime / Высота</li>
+                  <li class="dimensions lang">Capacity / Capacitate / Объем</li>
+                </ul>
+              </div>
+              <div class="num">
+                <ul>
+                  <li class="num lang">5.895 м</li>
+                  <li class="num lang">2.310 м</li>
+                  <li class="num lang">2.355 м</li>
+                  <li class="num lang">32.200 м³</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="equipment-item">
+            <div class="accent-num">40’</div>
+            <div class="equipment-item-content">
+              <div class="equipment-item-content">
+                <div class="dimensions">
+                  <ul>
+                    <li class="dimensions lang">Length / Lungime / Длина</li>
+                    <li class="dimensions lang">Width / Lăţime / Ширина</li>
+                    <li class="dimensions lang">Height / Înălţime / Высота</li>
+                    <li class="dimensions lang">
+                      Capacity / Capacitate / Объем
+                    </li>
+                  </ul>
+                </div>
+                <div class="num">
+                  <ul>
+                    <li class="num lang">12.025 м</li>
+                    <li class="num lang">2.350 м</li>
+                    <li class="num lang">2.355 м</li>
+                    <li class="num lang">65.500 м³</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="equipment-object">
+            <svg width="250" height="320" class="container-img-svg">
+              <use href="img/svg/sprite.svg#open top "></use>
+            </svg>
+          </div>
+        </div>
+        <div class="equipment-items">
+          <div class="equipment-item">
+            <h3 class="equipment-item-title">platform</h3>
+            <h1 class="accent-num">20’</h1>
+            <div class="equipment-item-content">
+              <div class="dimensions">
+                <ul>
+                  <li class="dimensions lang">Length / Lungime / Длина</li>
+                  <li class="dimensions lang">Width / Lăţime / Ширина</li>
+                  <li class="dimensions lang">Payload height / Înălţime</li>
+                  <li class="dimensions lang">
+                    încărcăturii / Высота загрузки
+                  </li>
+                </ul>
+              </div>
+              <div class="num">
+                <ul>
+                  <li class="num lang">6.060 м</li>
+                  <li class="num lang">2.440 м</li>
+                  <li class="num lang">&nbsp;</li>
+                  <li class="num lang">2.230 м</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="equipment-item">
+            <div class="accent-num">40’</div>
+            <div class="equipment-item-content">
+              <div class="equipment-item-content">
+                <div class="dimensions">
+                  <ul>
+                    <li class="dimensions lang">Length / Lungime / Длина</li>
+                    <li class="dimensions lang">Width / Lăţime / Ширина</li>
+                    <li class="dimensions lang">Payload height / Înălţime</li>
+                    <li class="dimensions lang">
+                      încărcăturii / Высота загрузки
+                    </li>
+                  </ul>
+                </div>
+                <div class="num">
+                  <ul>
+                    <li class="num lang">12.180 м</li>
+                    <li class="num lang">2.400 м</li>
+                    <li class="num lang">&nbsp;</li>
+                    <li class="num lang">1.950 м</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="equipment-object">
+            <svg width="250" height="320" class="container-img-svg">
+              <use href="img/svg/sprite.svg#platform"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="equipment-items">
+          <div class="equipment-item">
+            <h3 class="equipment-item-title">tank</h3>
+            <h1 class="accent-num">20’</h1>
+            <div class="equipment-item-content">
+              <div class="dimensions">
+                <ul>
+                  <li class="dimensions lang">Length / Lungime / Длина</li>
+                  <li class="dimensions lang">Width / Lăţime / Ширина</li>
+                  <li class="dimensions lang">Height / Înălţime / Высота</li>
+                  <li class="dimensions lang">Capacity / Capacitate / Объем</li>
+                </ul>
+              </div>
+              <div class="num">
+                <ul>
+                  <li class="num lang">5.900 м</li>
+                  <li class="num lang">2.350 м</li>
+                  <li class="num lang">2.350 м</li>
+                  <li class="num lang">24.000L</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="equipment-object">
+            <svg width="250" height="320" class="container-img-svg">
+              <use href="img/svg/sprite.svg#tank"></use>
+            </svg>
+          </div>
+        </div>
       </div>
     </section>
     <section id="adr" class="container adr">
       <div class="adr-header">
         <div class="adr-title lang" key="adr_title">
-          Clasificarea mărfurilor periculoase
+          Clasificarea mărfurilor periculoase ADR
         </div>
-        <div class="adr-title"><b>ADR</b></div>
         <a href="#equipment" class="equipment__btn lang" key="button1">
           specificații<br />
           containere</a
         >
       </div>
-      <div class="equipment-image">
-        <picture>
-          <source srcset="img/ard_ru.webp" type="image/webp" />
-          <source srcset="img/ard_ru.jpg" type="image/jpg" />
-          <img src="img/ard_ru.jpg" alt="adr" />
-        </picture>
+      <div class="container-adr">
+        <div class="adr-items">
+          <div class="adr-item">
+            <div class="adr-item-title">
+              <h3 class="lang">Clasa 1. Explozivi și articole</h3>
+            </div>
+            <div class="adr-item-text">
+              <p>
+                Materiale explozive, care datorită proprietăților lor pot
+                explodează, provoacă un incendiu cu acțiune explozivă, precum și
+                dispozitivele care conțin explozivi și mijloace explozive
+                destinate producției efect pirotehnic.
+              </p>
+              <ul class="adr-list">
+                <li>1.1 Materiale explozive cu pericol de explozie în masă</li>
+                <li>1.2 Materiale explozive care nu explodează în masă</li>
+                <li>1.3 Materiale explozive, inflamabile, masă neexplozivă</li>
+                <li>1.4 Explozivi care nu prezintă un pericol semnificativ</li>
+                <li>1.5 Materiale explozive foarte insensibile</li>
+                <li>1.6 Produse extrem de sensibile</li>
+              </ul>
+            </div>
+          </div>
+          <div class="adr-object-box">
+            <div class="adr-object-wrapper">
+              <svg class="adr-object" width="100" height="100">
+                <use href="img/svg/sprite.svg#1_1A"></use>
+              </svg>
+              <svg class="adr-object" width="100" height="100">
+                <use href="img/svg/sprite.svg#1_2B"></use>
+              </svg>
+              <svg class="adr-object" width="100" height="100">
+                <use href="img/svg/sprite.svg#1_3C"></use>
+              </svg>
+            </div>
+            <div class="adr-object-wrapper">
+              <svg class="adr-object" width="100" height="100">
+                <use href="img/svg/sprite.svg#1_4B"></use>
+              </svg>
+              <svg class="adr-object" width="100" height="100">
+                <use href="img/svg/sprite.svg#1_5D"></use>
+              </svg>
+              <svg class="adr-object" width="100" height="100">
+                <use href="img/svg/sprite.svg#1_6N"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="adr-items">
+          <div class="adr-item">
+            <div class="adr-item-title">
+              <h3 class="lang">Clasa 2. Gaze</h3>
+            </div>
+            <div class="adr-item-text">
+              <p>
+                Gazele sunt comprimate, lichefiate prin răcire și dizolvate sub
+                presiune care îndeplinește cel puțin una dintre următoarele
+                condiții.
+              </p>
+              <ul class="adr-list">
+                <li>2.1 Gaze inflamabile</li>
+                <li>2.2 Gaze neinflamabile, netoxice</li>
+                <li>2.3 Gaze toxice</li>
+              </ul>
+            </div>
+          </div>
+          <div class="adr-object-wrapper">
+            <svg class="adr-object-double" width="164" height="100">
+              <use href="img/svg/sprite.svg#2_1"></use>
+            </svg>
+            <svg class="adr-object-double" width="164" height="100">
+              <use href="img/svg/sprite.svg#2_2"></use>
+            </svg>
+            <svg class="adr-object" width="100" height="100">
+              <use href="img/svg/sprite.svg#2_3"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="adr-items">
+          <div class="adr-item">
+            <div class="adr-item-title">
+              <h3 class="lang">Clasa 3. Lichide inflamabile</h3>
+            </div>
+            <div class="adr-item-text">
+              <p>
+                Mărfurile periculoase transportate cel mai frecvent sunt
+                lichidele inflamabile precum alcoolurile, băuturile spirtoase,
+                emailurile, vopselele, lacurile, solvenții, chiturile, adezivii
+                și lustruirile, parfumurile etc.
+              </p>
+              <ul class="adr-list">
+                <li>3.1 Lichide inflamabile</li>
+                <li>3.2 Explozivi lichidi desensibilizați</li>
+              </ul>
+            </div>
+          </div>
+          <div class="adr-object-wrapper">
+            <svg class="adr-object" width="100" height="100">
+              <use href="img/svg/sprite.svg#3_1"></use>
+            </svg>
+            <svg class="adr-object" width="100" height="100">
+              <use href="img/svg/sprite.svg#3_2"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="adr-items">
+          <div class="adr-item">
+            <div class="adr-item-title">
+              <h3 class="lang">Clasa 4. Solide inflamabile</h3>
+            </div>
+            <div class="adr-item-text">
+              <p>
+                Substanțe și materiale foarte inflamabile (cu excepția celor
+                clasificate ca explozive) care se pot aprinde cu ușurință în
+                timpul transportului din surse externe de aprindere, ca urmare a
+                frecării, absorbției de umiditate, transformări chimice
+                spontane, precum și la încălzire.
+              </p>
+              <ul class="adr-list">
+                <li>4.1 Solide inflamabile</li>
+                <li>4.2. Substante supuse arderii spontane</li>
+                <li>
+                  4.3 Substanțe care emit gaze inflamabile în contact cu apa
+                  (periculos dacă este umed)
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="adr-object-wrapper">
+            <svg class="adr-object" width="100" height="100">
+              <use href="img/svg/sprite.svg#4_1"></use>
+            </svg>
+            <svg class="adr-object" width="100" height="100">
+              <use href="img/svg/sprite.svg#4_2"></use>
+            </svg>
+            <svg class="adr-object-double" width="144" height="100">
+              <use href="img/svg/sprite.svg#4_3"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="adr-items">
+          <div class="adr-item">
+            <div class="adr-item-title">
+              <h3 class="lang">Clasa 5. Agenti oxidanti</h3>
+            </div>
+            <div class="adr-item-text">
+              <p>
+                Substanțe oxidante și peroxizi organici care eliberează ușor
+                oxigen, susțin arderea și pot provoca, în condiții adecvate sau
+                atunci când sunt amestecate cu alte substanțe, arderea spontană
+                și explozia.
+              </p>
+              <ul class="adr-list">
+                <li>5.1 Agenți oxidanți</li>
+                <li>5.2 Peroxizi organici</li>
+              </ul>
+            </div>
+          </div>
+          <div class="adr-object-wrapper">
+            <svg class="adr-object" width="100" height="100">
+              <use href="img/svg/sprite.svg#5_1"></use>
+            </svg>
+            <svg class="adr-object-double" width="146" height="100">
+              <use href="img/svg/sprite.svg#5_2"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="adr-items">
+          <div class="adr-item">
+            <div class="adr-item-title">
+              <h3 class="lang">Clasa 6. Substante toxice</h3>
+            </div>
+            <div class="adr-item-text">
+              <p>
+                Substanțele toxice sunt lichide sau solide care pot provoca
+                moartea sau vătămarea gravă sau vătămarea sănătății oameni dacă
+                sunt înghițiți, inhalați sau intră în contact cu pielea.
+              </p>
+              <ul class="adr-list">
+                <li>6.1 Substanțe toxice (otrăvitoare)</li>
+                <li>6.2 Substanțe infecțioase</li>
+              </ul>
+            </div>
+          </div>
+          <div class="adr-object-wrapper">
+            <svg class="adr-object" width="100" height="100">
+              <use href="img/svg/sprite.svg#6_1"></use>
+            </svg>
+            <svg class="adr-object" width="100" height="100">
+              <use href="img/svg/sprite.svg#6_2"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="adr-items">
+          <div class="adr-item">
+            <div class="adr-item-title">
+              <h3 class="lang">Clasa 7. Substante radioactive</h3>
+            </div>
+            <div class="adr-item-text">
+              <p>
+                Material radioactiv este orice material care conține
+                radionuclizi în care concentrația activității, precum și
+                activitatea totală a încărcăturii, depășește valorile
+                specificate în reglementări. Pericol principal (principal):
+                radiații radioactive sub formă de radiații alfa, beta sau gamma.
+                Materialul radioactiv trebuie să fie atribuit unuia dintre
+                numerele ONU, în funcție de nivelul de activitate al
+                radionuclizilor conținuti în pachet, de dacă acești radionuclizi
+                sunt fisionali sau nu, de tipul de pachet oferit pentru
+                transport și de natura sau forma conținutului pachet sau
+                condiții speciale de transport. La transportul materialului
+                fisionabil, pe lângă eticheta de pericol principal trebuie
+                utilizată o etichetă „Materiale fisionabile”.
+              </p>
+              <p>
+                7.1 Categoria I 7.2. Categoria II 7.3 Categoria III 7.4
+                Materiale fisionabile clasa 7
+              </p>
+            </div>
+          </div>
+          <div class="adr-object-box">
+            <div class="adr-object-wrapper">
+              <svg class="adr-object" width="100" height="100">
+                <use href="img/svg/sprite.svg#7_1"></use>
+              </svg>
+              <svg class="adr-object" width="100" height="100">
+                <use href="img/svg/sprite.svg#7_2"></use>
+              </svg>
+            </div>
+            <div class="adr-object-wrapper">
+              <svg class="adr-object" width="100" height="100">
+                <use href="img/svg/sprite.svg#7_3"></use>
+              </svg>
+              <svg class="adr-object" width="100" height="100">
+                <use href="img/svg/sprite.svg#7_4"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="adr-items">
+          <div class="adr-item">
+            <div class="adr-item-title">
+              <h3 class="lang">Clasa 8. Substanțe corozive</h3>
+            </div>
+            <div class="adr-item-text">
+              <p>
+                Corozivii sunt substanțe care, prin acțiune chimică, provoacă
+                leziuni ireversibile ale pielii sau, dacă se scurg, provoacă
+                daune fizice altor mărfuri sau vehicule sau chiar provoacă
+                distrugerea acestora.
+              </p>
+              <ul class="adr-list">
+                <li>8.1 Acizi, substanțe foarte corozive</li>
+                <li>8.2 Alcaline, substanțe corozive</li>
+                <li>
+                  8.3 Diverse substanțe caustice și corozive, substanțe ușor
+                  corozive
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="adr-object-wrapper">
+            <svg class="adr-object" width="100" height="100">
+              <use href="img/svg/sprite.svg#8"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="adr-items">
+          <div class="adr-item">
+            <div class="adr-item-title">
+              <h3 class="lang">Clasa 9. Alte substanțe periculoase</h3>
+            </div>
+            <div class="adr-item-text">
+              <p>
+                Substanțe și articole care, în timpul transportului, prezintă un
+                pericol care nu este acoperit de denumirile altor clase.
+              </p>
+              <ul class="adr-list">
+                <li>9.1 Mărfuri neclasificate în clasele 1-8</li>
+                <li>
+                  9.2 Mărfuri cu tipuri de pericol, a căror manifestare prezintă
+                  pericol numai atunci când sunt transportate în vrac prin
+                  transport pe apă
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="adr-object-wrapper">
+            <svg class="adr-object" width="100" height="100">
+              <use href="img/svg/sprite.svg#9"></use>
+            </svg>
+          </div>
+        </div>
+
+        <svg width="230" height="100">
+          <use href="img/svg/sprite.svg#sign_adr 1"></use>
+        </svg>
+        <svg width="230" height="100">
+          <use href="img/svg/sprite.svg#sign_200_300"></use>
+        </svg>
+        <svg width="114" height="50">
+          <use href="img/svg/sprite.svg#sign_300_120"></use>
+        </svg>
+        <svg width="132" height="100">
+          <use href="img/svg/sprite.svg#sign_200_300_1"></use>
+        </svg>
+        <svg width="176" height="100">
+          <use href="img/svg/sprite.svg#warning_01"></use>
+        </svg>
+        <svg width="176" height="100">
+          <use href="img/svg/sprite.svg#warning_ro"></use>
+        </svg>
+        <svg width="94" height="80">
+          <use href="img/svg/sprite.svg#warning_02"></use>
+        </svg>
+        <svg width="97" height="80">
+          <use href="img/svg/sprite.svg#gas_ru"></use>
+        </svg>
+        <svg width="97" height="80">
+          <use href="img/svg/sprite.svg#gas_ro"></use>
+        </svg>
+        <svg width="97" height="80">
+          <use href="img/svg/sprite.svg#gas_en"></use>
+        </svg>
+        <svg width="100" height="100">
+          <use href="img/svg/sprite.svg#oversized"></use>
+        </svg>
+        <svg width="220" height="50">
+          <use href="img/svg/sprite.svg#long_vehicle"></use>
+        </svg>
       </div>
     </section>
     <section id="contacte">
@@ -305,13 +987,13 @@
             </div>
             <div class="contacts-list-item">
               <svg width="28" height="28">
-                <use href="img/svg/sprite.svg#icon _phone"></use>
+                <use href="img/svg/sprite.svg#icon_phone"></use>
               </svg>
               Tel: +373 69603007
             </div>
             <div class="contacts-list-item">
               <svg width="28" height="28">
-                <use href="img/svg/sprite.svg#icon _map"></use>
+                <use href="img/svg/sprite.svg#icon_map"></use>
               </svg>
               <div class="address">
                 <div class="address-item lang" key="address1">
@@ -324,12 +1006,12 @@
             </div>
             <div class="contacts-list-item">
               <svg width="28" height="22">
-                <use href="img/svg/sprite.svg#icon _mail"></use>
+                <use href="img/svg/sprite.svg#icon_mail"></use>
               </svg>
               E-mail: dbogachov@gmail.com
             </div>
             <svg class="container_bot" width="260" height="180">
-              <use href="img/svg/sprite.svg#container_bot"></use>
+              <use href="img/svg/sprite.svg#high cube"></use>
             </svg>
           </div>
           <div class="message-form">
