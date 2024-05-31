@@ -16,6 +16,66 @@
     />
   </head>
   <body>
+    <nav class="mobile-navbar">
+      <div class="mobile-container">
+        <div class="nav-menu">
+          <div class="nav-menu-item">
+            <a href="#servicii" class="nav-menu-link lang" key="services"
+              >servicii</a
+            >
+          </div>
+          <div class="nav-menu-item">
+            <a href="#info" class="nav-menu-link lang" key="useful_information"
+              >informații utile</a
+            >
+          </div>
+          <div class="nav-menu-item">
+            <a href="#contacte" class="nav-menu-link lang" key="contacts"
+              >contacte</a
+            >
+          </div>
+          <div class="nav-menu-item">
+            <a href="#" class="cabinet" data-toggle="modal">
+              <svg
+                width="27"
+                height="32"
+                class="cabico"
+                viewBox="0 0 27 32"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.60714 8.5C5.60714 3.97811 9.10641 0.25 13.5 0.25C17.8936 0.25 21.3929 3.97811 21.3929 8.5C21.3929 13.0219 17.8936 16.75 13.5 16.75C9.10641 16.75 5.60714 13.0219 5.60714 8.5ZM13.5 1.75C10.003 1.75 7.10714 4.73673 7.10714 8.5C7.10714 12.2633 10.003 15.25 13.5 15.25C16.997 15.25 19.8929 12.2633 19.8929 8.5C19.8929 4.73673 16.997 1.75 13.5 1.75ZM9.55939 17.125H17.4406L15.1863 21.2672L16.2003 25.7922L18.2606 17.1299L18.8835 17.1611C23.2858 17.3815 26.75 21.1507 26.75 25.75V28.1875C26.75 30.1195 25.2485 31.75 23.3214 31.75H3.67857C1.7515 31.75 0.25 30.1195 0.25 28.1875V25.75C0.25 21.1507 3.71416 17.3815 8.11651 17.1611L8.73936 17.1299L10.7997 25.7922L11.8137 21.2672L9.55939 17.125ZM12.0835 18.625L13.4006 21.0453L11.5533 29.289L10.0918 29.2985L7.57561 18.7196C4.30884 19.1979 1.75 22.1251 1.75 25.75V28.1875C1.75 29.3609 2.64805 30.25 3.67857 30.25H23.3214C24.3519 30.25 25.25 29.3609 25.25 28.1875V25.75C25.25 22.1251 22.6912 19.1979 19.4244 18.7196L16.9082 29.2985L15.4467 29.289L13.5994 21.0453L14.9165 18.625H12.0835Z"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <nav class="lang-box">
+            <button id="ro" class="header__btn translate" data-btn="ro">
+              RO
+            </button>
+            <button id="ru" class="header__btn translate" data-btn="ru">
+              RU
+            </button>
+            <button id="en" class="header__btn translate" data-btn="en">
+              EN
+            </button>
+          </nav>
+        </div>
+        <a href="#top" class="logo">
+          <svg width="85" height="60">
+            <use href="img/svg/sprite.svg#Logo"></use>
+          </svg>
+        </a>
+
+        <div class="burger">
+          <span></span>
+        </div>
+      </div>
+    </nav>
     <nav class="navbar">
       <div class="container navbar-container">
         <a href="#top">
@@ -23,6 +83,7 @@
             <use href="img/svg/sprite.svg#Logo"></use>
           </svg>
         </a>
+
         <ul class="nav-menu">
           <li class="nav-menu-item">
             <a href="#servicii" class="nav-menu-link lang" key="services"
@@ -73,22 +134,6 @@
             EN
           </button>
         </nav>
-      </div>
-    </nav>
-    <nav class="navbar-lang">
-      <div class="container navbar-lang-container">
-        <nav class="lang-box">
-          <button id="ro" class="header__btn translate" data-btn="ro">
-            RO
-          </button>
-          <button id="ru" class="header__btn translate" data-btn="ru">
-            RU
-          </button>
-          <button id="en" class="header__btn translate" data-btn="en">
-            EN
-          </button>
-        </nav>
-        Ce mărfuri se transportă în containere?
       </div>
     </nav>
     <header id="top">
@@ -157,6 +202,11 @@
           <source srcset="img/fon_elips.png" type="image/png" />
           <img src="img/fon_elips.png" alt="fon-elips" class="header-elips" />
         </picture>
+        <!-- <picture>
+          <source srcset="img/bg_image.webp" type="image/webp" />
+          <source srcset="img/bg_image.jpg" type="image/jpg" />
+          <img class="bg-image" src="img/bg_image.jpg" alt="DAF" />
+        </picture> -->
         <picture>
           <source srcset="img/bg_image02.webp" type="image/webp" />
           <source srcset="img/bg_image02.jpg" type="image/jpg" />
@@ -258,7 +308,7 @@
             </p>
           </div>
           <div class="questions-items">
-            <svg width="250" height="320" class="container-img-svg">
+            <svg width="250" height="320" class="container-top">
               <use href="img/svg/sprite.svg#standard dry"></use>
             </svg>
             <a href="#equipment" class="equipment__btn lang" key="button1"
@@ -288,7 +338,6 @@
         <div class="equipment-items">
           <div class="equipment-item">
             <h3 class="equipment-item-title">standard dry</h3>
-            <h1 class="accent-num">20’</h1>
             <div class="equipment-item-content">
               <div class="dimensions">
                 <ul>
@@ -298,30 +347,27 @@
                   <li class="dimensions lang">Capacity / Capacitate / Объем</li>
                 </ul>
               </div>
-              <div class="num">
-                <ul>
-                  <li class="num lang">5.900 м</li>
-                  <li class="num lang">2.350 м</li>
-                  <li class="num lang">2.390 м</li>
-                  <li class="num lang">33.200 м³</li>
-                </ul>
+            </div>
+          </div>
+          <div class="equipment-item">
+            <h3 class="equipment-item-title">20’</h3>
+            <div class="equipment-item-content">
+              <div class="equipment-item-content">
+                <div class="num">
+                  <ul>
+                    <li class="num lang">5.900 м</li>
+                    <li class="num lang">2.350 м</li>
+                    <li class="num lang">2.390 м</li>
+                    <li class="num lang">33.200 м³</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
           <div class="equipment-item">
-            <div class="accent-num">40’</div>
+            <h2 class="equipment-item-title">40’</h2>
             <div class="equipment-item-content">
               <div class="equipment-item-content">
-                <div class="dimensions">
-                  <ul>
-                    <li class="dimensions lang">Length / Lungime / Длина</li>
-                    <li class="dimensions lang">Width / Lăţime / Ширина</li>
-                    <li class="dimensions lang">Height / Înălţime / Высота</li>
-                    <li class="dimensions lang">
-                      Capacity / Capacitate / Объем
-                    </li>
-                  </ul>
-                </div>
                 <div class="num">
                   <ul>
                     <li class="num lang">12.035 м</li>
@@ -342,7 +388,6 @@
         <div class="equipment-items">
           <div class="equipment-item">
             <h3 class="equipment-item-title">flat rack</h3>
-            <h1 class="accent-num">20’</h1>
             <div class="equipment-item-content">
               <div class="dimensions">
                 <ul>
@@ -351,26 +396,26 @@
                   <li class="dimensions lang">Height / Înălţime / Высота</li>
                 </ul>
               </div>
-              <div class="num">
-                <ul>
-                  <li class="num lang">5.620 м</li>
-                  <li class="num lang">2.200 м</li>
-                  <li class="num lang">2.230 м</li>
-                </ul>
+            </div>
+          </div>
+          <div class="equipment-item">
+            <h3 class="equipment-item-title">20’</h3>
+            <div class="equipment-item-content">
+              <div class="equipment-item-content">
+                <div class="num">
+                  <ul>
+                    <li class="num lang">5.620 м</li>
+                    <li class="num lang">2.200 м</li>
+                    <li class="num lang">2.230 м</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
           <div class="equipment-item">
-            <div class="accent-num">40’</div>
+            <h2 class="equipment-item-title">40’</h2>
             <div class="equipment-item-content">
               <div class="equipment-item-content">
-                <div class="dimensions">
-                  <ul>
-                    <li class="dimensions lang">Length / Lungime / Длина</li>
-                    <li class="dimensions lang">Width / Lăţime / Ширина</li>
-                    <li class="dimensions lang">Height / Înălţime / Высота</li>
-                  </ul>
-                </div>
                 <div class="num">
                   <ul>
                     <li class="num lang">12.080 м</li>
@@ -390,7 +435,6 @@
         <div class="equipment-items">
           <div class="equipment-item">
             <h3 class="equipment-item-title">reefer</h3>
-            <h1 class="accent-num">20’</h1>
             <div class="equipment-item-content">
               <div class="dimensions">
                 <ul>
@@ -400,30 +444,27 @@
                   <li class="dimensions lang">Capacity / Capacitate / Объем</li>
                 </ul>
               </div>
-              <div class="num">
-                <ul>
-                  <li class="num lang">5.425 м</li>
-                  <li class="num lang">2.275 м</li>
-                  <li class="num lang">2.260 м</li>
-                  <li class="num lang">28.300 м³</li>
-                </ul>
+            </div>
+          </div>
+          <div class="equipment-item">
+            <h3 class="equipment-item-title">20’</h3>
+            <div class="equipment-item-content">
+              <div class="equipment-item-content">
+                <div class="num">
+                  <ul>
+                    <li class="num lang">5.425 м</li>
+                    <li class="num lang">2.275 м</li>
+                    <li class="num lang">2.260 м</li>
+                    <li class="num lang">28.300 м³</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
           <div class="equipment-item">
-            <div class="accent-num">40’</div>
+            <h2 class="equipment-item-title">40’</h2>
             <div class="equipment-item-content">
               <div class="equipment-item-content">
-                <div class="dimensions">
-                  <ul>
-                    <li class="dimensions lang">Length / Lungime / Длина</li>
-                    <li class="dimensions lang">Width / Lăţime / Ширина</li>
-                    <li class="dimensions lang">Height / Înălţime / Высота</li>
-                    <li class="dimensions lang">
-                      Capacity / Capacitate / Объем
-                    </li>
-                  </ul>
-                </div>
                 <div class="num">
                   <ul>
                     <li class="num lang">11.495 м</li>
@@ -444,7 +485,6 @@
         <div class="equipment-items">
           <div class="equipment-item">
             <h3 class="equipment-item-title">high cube</h3>
-            <h1 class="accent-num">40’</h1>
             <div class="equipment-item-content">
               <div class="dimensions">
                 <ul>
@@ -454,30 +494,27 @@
                   <li class="dimensions lang">Capacity / Capacitate / Объем</li>
                 </ul>
               </div>
-              <div class="num">
-                <ul>
-                  <li class="num lang">12.035 м</li>
-                  <li class="num lang">2.350 м</li>
-                  <li class="num lang">2.695 м</li>
-                  <li class="num lang">76.300 м³</li>
-                </ul>
+            </div>
+          </div>
+          <div class="equipment-item">
+            <h3 class="equipment-item-title">40’</h3>
+            <div class="equipment-item-content">
+              <div class="equipment-item-content">
+                <div class="num">
+                  <ul>
+                    <li class="num lang">12.035 м</li>
+                    <li class="num lang">2.350 м</li>
+                    <li class="num lang">2.695 м</li>
+                    <li class="num lang">76.300 м³</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
           <div class="equipment-item">
-            <div class="accent-num">45’</div>
+            <h2 class="equipment-item-title">45’</h2>
             <div class="equipment-item-content">
               <div class="equipment-item-content">
-                <div class="dimensions">
-                  <ul>
-                    <li class="dimensions lang">Length / Lungime / Длина</li>
-                    <li class="dimensions lang">Width / Lăţime / Ширина</li>
-                    <li class="dimensions lang">Height / Înălţime / Высота</li>
-                    <li class="dimensions lang">
-                      Capacity / Capacitate / Объем
-                    </li>
-                  </ul>
-                </div>
                 <div class="num">
                   <ul>
                     <li class="num lang">13.555 м</li>
@@ -498,7 +535,6 @@
         <div class="equipment-items">
           <div class="equipment-item">
             <h3 class="equipment-item-title">open top</h3>
-            <h1 class="accent-num">20’</h1>
             <div class="equipment-item-content">
               <div class="dimensions">
                 <ul>
@@ -508,30 +544,27 @@
                   <li class="dimensions lang">Capacity / Capacitate / Объем</li>
                 </ul>
               </div>
-              <div class="num">
-                <ul>
-                  <li class="num lang">5.895 м</li>
-                  <li class="num lang">2.310 м</li>
-                  <li class="num lang">2.355 м</li>
-                  <li class="num lang">32.200 м³</li>
-                </ul>
+            </div>
+          </div>
+          <div class="equipment-item">
+            <h3 class="equipment-item-title">20’</h3>
+            <div class="equipment-item-content">
+              <div class="equipment-item-content">
+                <div class="num">
+                  <ul>
+                    <li class="num lang">5.895 м</li>
+                    <li class="num lang">2.310 м</li>
+                    <li class="num lang">2.355 м</li>
+                    <li class="num lang">32.200 м³</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
           <div class="equipment-item">
-            <div class="accent-num">40’</div>
+            <h2 class="equipment-item-title">40’</h2>
             <div class="equipment-item-content">
               <div class="equipment-item-content">
-                <div class="dimensions">
-                  <ul>
-                    <li class="dimensions lang">Length / Lungime / Длина</li>
-                    <li class="dimensions lang">Width / Lăţime / Ширина</li>
-                    <li class="dimensions lang">Height / Înălţime / Высота</li>
-                    <li class="dimensions lang">
-                      Capacity / Capacitate / Объем
-                    </li>
-                  </ul>
-                </div>
                 <div class="num">
                   <ul>
                     <li class="num lang">12.025 м</li>
@@ -545,14 +578,13 @@
           </div>
           <div class="equipment-object">
             <svg width="250" height="320" class="container-img-svg">
-              <use href="img/svg/sprite.svg#open top "></use>
+              <use href="img/svg/sprite.svg#open top"></use>
             </svg>
           </div>
         </div>
         <div class="equipment-items">
           <div class="equipment-item">
             <h3 class="equipment-item-title">platform</h3>
-            <h1 class="accent-num">20’</h1>
             <div class="equipment-item-content">
               <div class="dimensions">
                 <ul>
@@ -564,30 +596,27 @@
                   </li>
                 </ul>
               </div>
-              <div class="num">
-                <ul>
-                  <li class="num lang">6.060 м</li>
-                  <li class="num lang">2.440 м</li>
-                  <li class="num lang">&nbsp;</li>
-                  <li class="num lang">2.230 м</li>
-                </ul>
+            </div>
+          </div>
+          <div class="equipment-item">
+            <h3 class="equipment-item-title">20’</h3>
+            <div class="equipment-item-content">
+              <div class="equipment-item-content">
+                <div class="num">
+                  <ul>
+                    <li class="num lang">6.060 м</li>
+                    <li class="num lang">2.440 м</li>
+                    <li class="num lang">&nbsp;</li>
+                    <li class="num lang">2.230 м</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
           <div class="equipment-item">
-            <div class="accent-num">40’</div>
+            <h2 class="equipment-item-title">40’</h2>
             <div class="equipment-item-content">
               <div class="equipment-item-content">
-                <div class="dimensions">
-                  <ul>
-                    <li class="dimensions lang">Length / Lungime / Длина</li>
-                    <li class="dimensions lang">Width / Lăţime / Ширина</li>
-                    <li class="dimensions lang">Payload height / Înălţime</li>
-                    <li class="dimensions lang">
-                      încărcăturii / Высота загрузки
-                    </li>
-                  </ul>
-                </div>
                 <div class="num">
                   <ul>
                     <li class="num lang">12.180 м</li>
@@ -608,7 +637,6 @@
         <div class="equipment-items">
           <div class="equipment-item">
             <h3 class="equipment-item-title">tank</h3>
-            <h1 class="accent-num">20’</h1>
             <div class="equipment-item-content">
               <div class="dimensions">
                 <ul>
@@ -618,13 +646,20 @@
                   <li class="dimensions lang">Capacity / Capacitate / Объем</li>
                 </ul>
               </div>
-              <div class="num">
-                <ul>
-                  <li class="num lang">5.900 м</li>
-                  <li class="num lang">2.350 м</li>
-                  <li class="num lang">2.350 м</li>
-                  <li class="num lang">24.000L</li>
-                </ul>
+            </div>
+          </div>
+          <div class="equipment-item">
+            <h3 class="equipment-item-title">20’</h3>
+            <div class="equipment-item-content">
+              <div class="equipment-item-content">
+                <div class="num">
+                  <ul>
+                    <li class="num lang">5.900 м</li>
+                    <li class="num lang">2.350 м</li>
+                    <li class="num lang">2.350 м</li>
+                    <li class="num lang">24.000 м³</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -774,16 +809,20 @@
               </ul>
             </div>
           </div>
-          <div class="adr-object-wrapper">
-            <svg class="adr-object" width="100" height="100">
-              <use href="img/svg/sprite.svg#4_1"></use>
-            </svg>
-            <svg class="adr-object" width="100" height="100">
-              <use href="img/svg/sprite.svg#4_2"></use>
-            </svg>
-            <svg class="adr-object-double" width="144" height="100">
-              <use href="img/svg/sprite.svg#4_3"></use>
-            </svg>
+          <div class="adr-object-box">
+            <div class="adr-object-wrapper">
+              <svg class="adr-object" width="100" height="100">
+                <use href="img/svg/sprite.svg#4_1"></use>
+              </svg>
+              <svg class="adr-object" width="100" height="100">
+                <use href="img/svg/sprite.svg#4_2"></use>
+              </svg>
+            </div>
+            <div class="adr-object-wrapper">
+              <svg class="adr-object-double" width="144" height="100">
+                <use href="img/svg/sprite.svg#4_3"></use>
+              </svg>
+            </div>
           </div>
         </div>
         <div class="adr-items">
@@ -939,43 +978,6 @@
             </svg>
           </div>
         </div>
-
-        <svg width="230" height="100">
-          <use href="img/svg/sprite.svg#sign_adr 1"></use>
-        </svg>
-        <svg width="230" height="100">
-          <use href="img/svg/sprite.svg#sign_200_300"></use>
-        </svg>
-        <svg width="114" height="50">
-          <use href="img/svg/sprite.svg#sign_300_120"></use>
-        </svg>
-        <svg width="132" height="100">
-          <use href="img/svg/sprite.svg#sign_200_300_1"></use>
-        </svg>
-        <svg width="176" height="100">
-          <use href="img/svg/sprite.svg#warning_01"></use>
-        </svg>
-        <svg width="176" height="100">
-          <use href="img/svg/sprite.svg#warning_ro"></use>
-        </svg>
-        <svg width="94" height="80">
-          <use href="img/svg/sprite.svg#warning_02"></use>
-        </svg>
-        <svg width="97" height="80">
-          <use href="img/svg/sprite.svg#gas_ru"></use>
-        </svg>
-        <svg width="97" height="80">
-          <use href="img/svg/sprite.svg#gas_ro"></use>
-        </svg>
-        <svg width="97" height="80">
-          <use href="img/svg/sprite.svg#gas_en"></use>
-        </svg>
-        <svg width="100" height="100">
-          <use href="img/svg/sprite.svg#oversized"></use>
-        </svg>
-        <svg width="220" height="50">
-          <use href="img/svg/sprite.svg#long_vehicle"></use>
-        </svg>
       </div>
     </section>
     <section id="contacte">
@@ -1097,7 +1099,9 @@
         </form>
       </div>
     </div>
+
     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
   </body>

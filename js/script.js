@@ -17,6 +17,12 @@ anchors.forEach((anc) => {
 });
 
 // BURGER MENU
+$(document).ready(function () {
+  $(".burger").click(function (event) {
+    $(".burger,.nav-menu").toggleClass("active");
+    $("body").toggleClass("lock");
+  });
+});
 
 // SLIDER
 
